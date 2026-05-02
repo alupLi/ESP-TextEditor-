@@ -24,7 +24,7 @@
 - CMake 3.10 или выше
 - Компилятор C++17 (MinGW, Visual Studio, Clang)
 
-### Шаги сборки (для Visual Studio 2022)
+### Шаги сборки (для Visual Studio)
 
 ```bash
 # Перейти в корневую директорию проекта
@@ -43,8 +43,11 @@ cmake --build build --config Release
 # 1.
 rmdir /s /q build
 
-# 2. 
+# 2 (для Visual Studio 2022).
 cmake -S . -B build -G "Visual Studio 17 2022"
+
+# 2 (для Visual Studio 2026).
+cmake -S . -B build -G "Visual Studio 18 2026"
 
 # 3. 
 cmake --build build --config Release
@@ -75,12 +78,42 @@ TextEditor.exe
 
 ---
 
-### Содержимое файла
-![Содержимое файла](screenshots/fileContent.png)
+### Создание нового файла
+![Создание нового файла](screenshots/createNewFile.png)
 
 ---
 
-### Завершение работы
-![Завершение работы](screenshots/end.png)
+### Добавление новых строк
+![Добавление новых строк](screenshots/addTextLines.png)
+
+---
+
+### Отмена добавления строки
+![Добавление новых строк](screenshots/cancellOneLine.png)
+
+---
+
+### Отмена всех действий 
+![Отмена всех действий](screenshots/cancellAllLine.png)
+
+---
+
+### Попытка изменения несуществующей строки файла
+![Попытка изменения несуществующей строки файла](screenshots/tryEditNotExistLine.png)
+
+---
+
+### Редактирование строки
+![Редактирование строки](screenshots/editLine.png)
+
+---
+
+### Сохранение файла; его закрытие и открытие для проверки
+![Сохранение файла; его закрытие и открытие для проверки](screenshots/SaveAndExit.png)
+
+---
+
+### Изменение строк файла; его закрытие без сохранения и открытие для проверки
+![Изменение строк файла; его закрытие без сохранения и открытие для проверки](screenshots/ExitWithoutSave.png)
 
 ---

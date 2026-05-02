@@ -51,6 +51,9 @@ void editMode(Editor& editor, UndoManager& undoManager) {
                 cout << "Line edited. Press Enter...";
                 cin.get();
             }
+            else {
+                cout << "\nLine not found. \n";
+            }
         }
         else if (input == "2") {
             string newLine;
